@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WUISimpleTextFormCell" customModule="wbea" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-Ms-5ek">
+                        <rect key="frame" x="20" y="0.0" width="280" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuH-Nk-1pv">
+                        <rect key="frame" x="12" y="0.0" width="288" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="RuH-Nk-1pv" firstAttribute="top" secondItem="pfI-Ms-5ek" secondAttribute="top" id="Al8-kc-sjt"/>
+                    <constraint firstItem="RuH-Nk-1pv" firstAttribute="bottom" secondItem="pfI-Ms-5ek" secondAttribute="bottom" id="DT4-Dv-34w"/>
+                    <constraint firstAttribute="trailing" secondItem="pfI-Ms-5ek" secondAttribute="trailing" constant="20" id="H2s-ST-rie"/>
+                    <constraint firstItem="RuH-Nk-1pv" firstAttribute="leading" secondItem="pfI-Ms-5ek" secondAttribute="leading" constant="-8" id="Tq4-iV-gfQ"/>
+                    <constraint firstAttribute="bottom" secondItem="pfI-Ms-5ek" secondAttribute="bottom" id="Y4U-25-MB6"/>
+                    <constraint firstItem="pfI-Ms-5ek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fEW-rN-fIE"/>
+                    <constraint firstItem="RuH-Nk-1pv" firstAttribute="trailing" secondItem="pfI-Ms-5ek" secondAttribute="trailing" id="gQg-lQ-mGg"/>
+                    <constraint firstItem="pfI-Ms-5ek" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oje-hX-ycS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="titleLabel" destination="pfI-Ms-5ek" id="4hF-wf-x2F"/>
+                <outlet property="webView" destination="RuH-Nk-1pv" id="6Bf-Oc-QOW"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="102"/>
+        </tableViewCell>
+    </objects>
+</document>
